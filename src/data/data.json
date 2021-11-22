@@ -38,7 +38,7 @@
         },
         {
             "pk": 10,
-            "content": "당신은 친구의 집들이에 가려고 합니다. 당신이 선택한 선물은?"
+            "content": "당신이 주로 음악을 듣는 방식은?"
         }
     ],
     "answers": [
@@ -285,61 +285,61 @@
         {
             "pk": 41,
             "content": "일단 파라솔이랑 음식 세팅! 사진 잘 찍어서 SNS에 여행 온 거 자랑해야지!",
-            "developer": 2,
+            "breed": 1,
             "question": 9
         },
         {
             "pk": 42,
             "content": "여행 왔는데 짐을 잃어버리면 낭패지! 락커룸이 어디 있는지 찾아보자!",
-            "developer": 4,
+            "breed": 5,
             "question": 9
         },
         {
             "pk": 43,
             "content": "준비물은 다 챙겨왔지? 빠뜨린 거 없는지 다시 확인하자!",
-            "developer": 1,
+            "breed": 4,
             "question": 9
         },
         {
             "pk": 44,
             "content": "이왕 온 거 유명한 건 다 해 봐야지! 근처에 어떤 맛집이 있는지 알아보자!",
-            "developer": 3,
+            "breed": 2,
             "question": 9
         },
         {
             "pk": 45,
             "content": "그냥 노는 건 재미없잖아? 비치볼 게임 하면서 놀자!",
-            "developer": 5,
+            "breed": 3,
             "question": 9
         },
         {
             "pk": 46,
-            "content": "집 꾸미기에 도움이 되는 예쁜 인테리어 소품을 골라볼까?",
-            "developer": 2,
+            "content": "유튜브에서 여러가지 감성적인 플레이리스트를 듣는다",
+            "breed": 2,
             "question": 10
         },
         {
             "pk": 47,
-            "content": "실용성이 갑이지! 화장지랑 수건 세트랑...",
-            "developer": 1,
+            "content": "흥나는 edm이나 팝송을 주로 듣는다.",
+            "breed": 1,
             "question": 10
         },
         {
             "pk": 48,
-            "content": "음... 우선 센스있는 집들이 선물 먼저 검색해봐야지!",
-            "developer": 5,
+            "content": "내 취향의 노래를 모아둔 재생목록이 있다.",
+            "breed": 5,
             "question": 10
         },
         {
             "pk": 49,
-            "content": "집들이 가서 뭐하겠어! 보드 게임이나 사 가자!",
-            "developer": 5,
+            "content": "그때 그때 유행하는 최신곡 위주로 듣는다.",
+            "breed": 3,
             "question": 10
         },
         {
             "pk": 50,
-            "content": "역시 집은 안전이 최고!! 현관문 보안장치 사줘야겠다.",
-            "developer": 4,
+            "content": "한 노래나 특정 가수에 꽂히면 그것만 듣는다.",
+            "breed": 4,
             "question": 10
         }
     ]
