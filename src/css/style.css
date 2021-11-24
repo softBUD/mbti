@@ -1,0 +1,65 @@
+@charset "utf-8";
+@import "reset.css";
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+body{
+    margin: 98px auto 0;
+    box-sizing: border-box;
+    font-family: 'Cafe24SsurroundAir', 'Noto Sans KR', sans-serif;
+    background-color: bisque;
+    height: 100%;
+}
+
+button {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*인트로 페이지 스타일링*/
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.intro-container img {
+    display: block;
+    width: 333px;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 70%;
+}
+.intro-container h1 {
+    font-weight: 700;
+    font-family: 'Cafe24Ssurround', sans-serif;
+    font-size: 55px;
+    line-height: 55px;
+    margin-bottom: 10px;
+}
+
+.intro-desc {
+    color: #009DAE;
+    margin-bottom: 20px;
+
+}
