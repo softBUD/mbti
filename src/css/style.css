@@ -27,8 +27,8 @@
 body{
     margin: 98px auto 0;
     box-sizing: border-box;
-    font-family: 'Cafe24SsurroundAir', 'Noto Sans KR', sans-serif;
-    background-color: bisque;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #FAEEE0;
     height: 100%;
 }
 
@@ -45,21 +45,226 @@ button {
 }
 .intro-container img {
     display: block;
-    width: 333px;
-    height: 300px;
+    width: 240px;
+    height: 240px;
     margin-bottom: 20px;
-    border-radius: 70%;
+    border-radius: 50%;
 }
 .intro-container h1 {
     font-weight: 700;
     font-family: 'Cafe24Ssurround', sans-serif;
     font-size: 55px;
     line-height: 55px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .intro-desc {
+    font-family: 'Noto Sans KR', sans-serif;
     color: #009DAE;
-    margin-bottom: 20px;
+    margin-bottom: 36px;
+}
+
+.start-btn {
+    font-size: 16px;
+    font-weight: 900;
+    color: #009DAE;
+    border-style:none; 
+    width: 300px;
+    height: 52px;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px rgba(80, 79, 79, 0.5);
+    border-radius: 10px;
+}
+/*문항 선택 페이지*/
+
+#question-form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.question-container {
+    display: none;
 
 }
+.question-container.on {
+    display: block;
+}
+
+.status-box {
+    background-color: #fff;
+    position: relative;
+}
+
+.status-number {
+    font-size: 18px;
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 18px;
+    color: #009DAE;
+}
+.status-bar {
+    height: 6px;
+    background-color: #009DAE;
+}
+
+.question-box h2{
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 40px 0 30px;
+}
+
+.answer-list {
+    margin-bottom: 48px;
+
+}
+.answer-list .answer-item {
+    text-indent: -22px;
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 12px 23px
+}
+
+.question-box input, .question-box label {
+    cursor: pointer;
+}
+
+.button-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-box button {
+    box-shadow: 0px 0px 4px rgba(80, 79, 79, 0.5);
+    color: #fff;
+    border-style: none;
+    background-color: #009DAE;
+    font-weight: 900;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.button-box.style-ceter {
+    justify-content: center;
+}
+
+/*로딩 스타일*/
+
+.loading-container {
+    display: block;
+    position: absolute;
+    top:326px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.loading-container img {
+    width: 91px;
+    height: 88px;
+    margin-bottom: 24px;
+}
+.loading-text {
+    font-size: 14px;
+}
+
+/*결과페이지 스타일*/
+.result-container {
+    
+    width: 300px;
+    margin: 0 auto;
+}
+
+.result-wrap {
+    margin-bottom: 36px;
+}
+.result-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.result-name {
+    font-family: 'Cafe24Ssurround', sans-serif;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 52px;
+    text-align: center;
+    color: #009DAE;
+}
+.result-image {
+    transform: translateX(10%);
+}
+.result-image img {
+    width: 240px;
+    height: 240px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.result-features {
+    border: 4px solid #D6D2C4;
+    border-radius: 7px;
+    margin-top: 8px;
+}
+
+.result-features h3 {
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+}
+
+.result-features-desc {
+    margin: 0 20px;
+    text-align: center;
+    
+}
+
+.result-features-desc li {
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 12px 12px;
+    text-indent: -9px;;
+}
+.result-features-desc li::before {
+    display: inline-block;
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #009DAE;
+    vertical-align: 3px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.restart-btn {
+    font-weight: 900;
+    width: 300px;
+    height: 52px;
+    color: #009DAE;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px rgba(80, 79, 79, 0.5);
+    border-style: none;
+    border-radius: 7px;
+}
+
+@media only screen 
+    and (min-device-width: 320px)
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+        body {
+            margin-top: 56px;
+        }
+        .intro-container h1 {
+            font-size:  45px;
+        }
+        .intro-desc {
+            font-size: 14px;
+        }
+    }
