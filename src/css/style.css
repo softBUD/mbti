@@ -82,11 +82,11 @@ button {
     margin: 0 auto;
 }
 
-.question-container {
+.question-item {
     display: none;
 
 }
-.question-container.on {
+.question-item.on {
     display: block;
 }
 
@@ -146,7 +146,7 @@ button {
     border-radius: 10px;
 }
 
-.button-box.style-ceter {
+.button-box.style-center {
     justify-content: center;
 }
 
@@ -244,6 +244,7 @@ button {
 }
 
 .restart-btn {
+    margin-bottom: 30px;
     font-weight: 900;
     width: 300px;
     height: 52px;
@@ -259,12 +260,29 @@ button {
     and (max-device-width: 480px)
     and (-webkit-min-device-pixel-ratio: 2) {
         body {
-            margin-top: 56px;
+            margin-top: 45px;
         }
         .intro-container h1 {
             font-size:  45px;
         }
         .intro-desc {
+            font-size: 14px;
+        }
+        .question-box h2 {
+            font-size: 16px;
+        }
+        .answer-item {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .loading-container {
+            top:266px;
+        }
+        .loading-text {
+            font-size: 12px;
+        }
+        
+        .result-features-desc li {
             font-size: 14px;
         }
     }
