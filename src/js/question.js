@@ -30,6 +30,34 @@ const form = document.querySelector('#question-form');
         firstButtonBox.classList.add('style-center');
 
         lastButtonBox.innerHTML = '<button type="button" class="previous-btn">이전</button><button type="submit" class="submit-btn">제출</button>';
+
+        const prevButtons = document.querySelectorAll(".previous-btn");
+        const nextButtons = document.querySelectorAll(".next-btn");
+
+        for (let prevButton of prevButtons) {
+            prevButton.addEventListener('click', () => {
+                let current = document.querySelector('.question-item.on');
+                movePrev(current);
+            })
+        }
+
+        for( let nextButton of nextButtons) {
+            nextButton.addEventListener('click', () => {
+                const inp = document.querySelectorAll('.question-item.on input');
+                let isCheked = false; //체크안할 시에 다음으로 넘어갈 수 없게
+                inp.forEach((item) => {
+                    if(item.checked) {
+                        //true일때 실행됨
+                        let current = document.querySelector('.question-item.on');
+                        moveNext(current);
+                        isCheked = true;
+                    }
+                })
+                if(!isCheked) {
+                    alert("보기를 선택해주세요!");
+                }
+            })
+        }
     });
 })();
 
@@ -68,5 +96,20 @@ function setElement (question, answerArr) {
 
     tempContainer.remove();
     return questionItem;
+
+    function moveNext(currentItem) {
+        currentItem.classList.add('on');
+        let next = currentItem.nextElementSibling;
+        if(next) {
+            next.classList.add('on');
+        }
+    }
+    function movePrev(currentItem) {
+        currentItem.classList.remove('on');
+        let prev = currentItem.previousElementSibling;
+        if (prev) {
+            prev.classList.add('on');
+        }
+    }
 }
 
