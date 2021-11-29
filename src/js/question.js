@@ -41,7 +41,7 @@ const form = document.querySelector('#question-form');
             })
         }
 
-        for( let nextButton of nextButtons) {
+        for(let nextButton of nextButtons) {
             nextButton.addEventListener('click', () => {
                 const inp = document.querySelectorAll('.question-item.on input');
                 let isCheked = false; //체크안할 시에 다음으로 넘어갈 수 없게
@@ -58,6 +58,11 @@ const form = document.querySelector('#question-form');
                 }
             })
         }
+        const statusBar = document.querySelectorAll(".status-bar");
+        statusBar.forEach((item, index) => {
+            item.style.width = `${(Number(index) + 1) * 10}%`
+            //문항이 넘어갈때마다 10%씩 넓어짐
+        })
     });
 })();
 
@@ -97,19 +102,20 @@ function setElement (question, answerArr) {
     tempContainer.remove();
     return questionItem;
 
-    function moveNext(currentItem) {
-        currentItem.classList.add('on');
-        let next = currentItem.nextElementSibling;
-        if(next) {
-            next.classList.add('on');
-        }
+}
+
+function moveNext(currentItem) {
+    currentItem.classList.remove('on'); //현재문항 안보이게함
+    let next = currentItem.nextElementSibling; //형제문항
+    if(next) {
+        next.classList.add('on');
     }
-    function movePrev(currentItem) {
-        currentItem.classList.remove('on');
-        let prev = currentItem.previousElementSibling;
-        if (prev) {
-            prev.classList.add('on');
-        }
+}
+function movePrev(currentItem) {
+    currentItem.classList.remove('on');
+    let prev = currentItem.previousElementSibling; //이전 형제 문항
+    if (prev) {
+        prev.classList.add('on');
     }
 }
 

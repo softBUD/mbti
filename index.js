@@ -20,6 +20,15 @@ app.get("/result/[1-5]", (req, res) => {
 });
 //"/"를 요청시에 index.html을 가져온다.
 
+app.post("/submit", (req, res) => {
+    const data = req.body;
+    let numberArr = [0, 0, 0, 0, 0];
+
+    for(let i = 1; i < 11; i++) {
+        
+    }
+})
+
 app.listen(8080, ()=> {
     console.log("Server running");
 });
