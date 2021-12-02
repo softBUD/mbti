@@ -25,8 +25,22 @@ app.post("/submit", (req, res) => {
     let numberArr = [0, 0, 0, 0, 0];
 
     for(let i = 1; i < 11; i++) {
-        
+        let developerNUM = Number(data[`question-${i}`]);
+        numberArr[developerNUM - 1 ] = numberArr[developerNUM - 1 ] + 1;
+
     }
+
+    let maxValue = 0;
+    let maxValueIdx = 0;
+
+    for(let i = 0; i< numberArr.length; i++) {
+        if(numberArr[i] > maxValue) {
+            maxValue = numberArr[i];
+            maxValueIdx = i;
+        }
+    }
+
+    res.redirect("/result/" + (maxValueIdx + 1));
 })
 
 app.listen(8080, ()=> {
