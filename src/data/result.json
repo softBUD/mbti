@@ -3,7 +3,7 @@
         "pk": 1,
         "name": "치와와",
         "title": "자신감이 넘쳐흐르는 당신은!",
-        "img": "../images/Back.png",
+        "img": "../images/Chihuahua.jpg",
         "features": [
             "내가 바로 이구역의 서열 1위.",
             "매사 두려움 없고 자신감이 넘침.고집있음.",
@@ -15,7 +15,7 @@
         "pk": 2,
         "name": "시베리안 허스키",
         "title": "호기심 그자체인 당신은!",
-        "img": "../images/Front.png",
+        "img": "../images/husky.jpg",
         "features": [
             "궁금한건 꼭 확인해야 함. 단, 확인하다가 삼천포로 빠질 수 있음.",
             "기본적으로 유순하지만 은근 고집있음.",
@@ -27,7 +27,7 @@
         "pk": 3,
         "name": "웰시코기",
         "title": "친화력 뿜뿜하는 당신은!",
-        "img": "../images/Data.png",
+        "img": "../images/welshi.jpg",
         "features": [
             "상당히 적극적이고 밝은 성격.",
             "외향적이고 다정다감한편.",
@@ -39,7 +39,7 @@
         "pk": 4,
         "name": "말티즈",
         "title": "눈치 백단인 당신은!",
-        "img": "../images/security.png",
+        "img": "../images/maltese.jpg",
         "features": [
             "분위기 잘 읽음. 낄끼빠빠 잘함.",
             "낯은 가리지만 외로운건 싫어함.",
@@ -51,7 +51,7 @@
         "pk": 5,
         "name": "포메라니안",
         "title": "독립적인 당신은!",
-        "img": "../images/Game.png",
+        "img": "../images/pormeranias.jpg",
         "features": [
             "예민하지만 예리하기도 함.",
             "참을성 없고 답답한건 질색.",

@@ -23,10 +23,14 @@ app.get("/result/[1-5]", (req, res) => {
 app.post("/submit", (req, res) => {
     const data = req.body;
     let numberArr = [0, 0, 0, 0, 0];
+    //for문이 실행되면서 5개의 인덱스 번호에
+    //사용자가 선택한 pk값을 1씩 증가시켜 선택 횟수를 카운트한다.
+    //예시) 사용자가 선택한 pk값: 1
+    //numberArr[0] = numArr[0] + 1
 
     for(let i = 1; i < 11; i++) {
-        let developerNUM = Number(data[`question-${i}`]);
-        numberArr[developerNUM - 1 ] = numberArr[developerNUM - 1 ] + 1;
+        let developerNum = Number(data[`question-${i}`]);
+       numberArr[ developerNum - 1 ] += 1;
 
     }
 
@@ -34,6 +38,8 @@ app.post("/submit", (req, res) => {
     let maxValueIdx = 0;
 
     for(let i = 0; i< numberArr.length; i++) {
+        //배열안의 숫자중 가장 큰숫자값을 구함
+        //가장 큰 숫자값의 인덱스 번호를 구함
         if(numberArr[i] > maxValue) {
             maxValue = numberArr[i];
             maxValueIdx = i;
