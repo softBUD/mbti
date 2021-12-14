@@ -29,8 +29,8 @@ app.post("/submit", (req, res) => {
     //numberArr[0] = numArr[0] + 1
 
     for(let i = 1; i < 11; i++) {
-        let developerNum = Number(data[`question-${i}`]);
-       numberArr[ developerNum - 1 ] += 1;
+        let breedNum = Number(data[`answer-${i}`]);
+       numberArr[breedNum - 1] += 1;
 
     }
 
@@ -45,7 +45,7 @@ app.post("/submit", (req, res) => {
             maxValueIdx = i;
         }
     }
-
+    console.log(maxValueIdx);
     res.redirect("/result/" + (maxValueIdx + 1));
 })
 
