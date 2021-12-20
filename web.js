@@ -1,7 +1,7 @@
 const express= require("express");
 //모듈 로드
 const app = express();
-const path = require("path");
+const path = require("socket.io").listen(8001);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
@@ -45,7 +45,7 @@ app.post("/submit", (req, res) => {
             maxValueIdx = i;
         }
     }
-    console.log(maxValueIdx);
+    
     res.redirect("/result/" + (maxValueIdx + 1));
 })
 
